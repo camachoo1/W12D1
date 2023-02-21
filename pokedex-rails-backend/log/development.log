@@ -4193,3 +4193,145 @@ Migrating to RemoveIndexFromItems (20230220214856)
   [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
   [1m[36mPokeMove Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "poke_moves" WHERE "poke_moves"."pokemon_id" = $1 AND "poke_moves"."move_id" = $2 LIMIT $3[0m  [["pokemon_id", 1], ["move_id", 1], ["LIMIT", 1]]
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for ::1 at 2023-02-20 15:15:18 -0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/omarcamacho/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/omarcamacho/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.6ms | Allocations: 526)
+Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 2806)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 15:35:20 -0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::PokemonController#index as JSON
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3421)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 15:36:04 -0800
+Processing by Api::PokemonController#index as JSON
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2396)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 15:39:00 -0800
+Processing by Api::PokemonController#index as JSON
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 8ms (ActiveRecord: 0.0ms | Allocations: 2708)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 16:02:55 -0800
+Processing by Api::PokemonController#index as JSON
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 0ms (Allocations: 93)
+
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2023-02-20 16:03:00 -0800
+Processing by Api::PokemonController#types as JSON
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 221)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 16:03:16 -0800
+Processing by Api::PokemonController#index as JSON
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 1ms (Allocations: 74)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 16:03:20 -0800
+Processing by Api::PokemonController#index as JSON
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 0ms (Allocations: 75)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 16:03:21 -0800
+Processing by Api::PokemonController#index as JSON
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 0ms (Allocations: 73)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 16:03:22 -0800
+Processing by Api::PokemonController#index as JSON
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 0ms (Allocations: 72)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 16:03:22 -0800
+Processing by Api::PokemonController#index as JSON
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 0ms (Allocations: 79)
+
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2023-02-20 16:03:27 -0800
+Processing by Api::PokemonController#types as JSON
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 160)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 16:03:32 -0800
+Processing by Api::PokemonController#index as JSON
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 0ms (Allocations: 72)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 16:04:17 -0800
+Processing by Api::PokemonController#index as JSON
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 0ms (Allocations: 72)
+
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2023-02-20 16:04:20 -0800
+Processing by Api::PokemonController#types as JSON
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 160)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 16:04:23 -0800
+Processing by Api::PokemonController#index as JSON
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 1ms (Allocations: 72)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 16:04:25 -0800
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-02-20 16:04:25 -0800
+Processing by Api::PokemonController#index as JSON
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 2ms (Allocations: 72)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2023-02-20 16:04:59 -0800
+Processing by Api::PokemonController#types as JSON
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 201)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 16:04:59 -0800
+Processing by Api::PokemonController#index as JSON
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 1ms (Allocations: 88)
+
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2023-02-20 16:05:02 -0800
+Processing by Api::PokemonController#types as JSON
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 161)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 16:05:06 -0800
+Processing by Api::PokemonController#index as JSON
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 1ms (Allocations: 72)
+
+
+Started GET "/api/pokemon" for 127.0.0.1 at 2023-02-20 16:05:06 -0800
+Processing by Api::PokemonController#index as JSON
+No template found for Api::PokemonController#index, rendering head :no_content
+Completed 204 No Content in 0ms (Allocations: 72)
+
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2023-02-20 16:05:11 -0800
+Processing by Api::PokemonController#types as JSON
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 160)
+
+
+Started GET "/api/pokemon/types" for 127.0.0.1 at 2023-02-20 16:05:12 -0800
+Processing by Api::PokemonController#types as JSON
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 160)
+
+
