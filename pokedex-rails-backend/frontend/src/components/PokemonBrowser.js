@@ -10,8 +10,10 @@ import { getPokemon } from '../store/pokemon';
 const PokemonBrowser = () => {
   const dispatch = useDispatch();
   const { pokemonId } = useParams();
-  const pokemon = useSelector(state => {
-    return state.pokemon.list.map(pokemonId => state.pokemon[pokemonId]);
+  const pokemon = useSelector((state) => {
+    return state.pokemon.list.map(
+      (pokemonId) => state.pokemon[pokemonId]
+    );
   });
   const [showForm, setShowForm] = useState(false);
 
@@ -33,18 +35,22 @@ const PokemonBrowser = () => {
               <div
                 className={
                   Number.parseInt(pokemonId) === pokemon.id
-                    ? "nav-entry is-selected"
-                    : "nav-entry"
+                    ? 'nav-entry is-selected'
+                    : 'nav-entry'
                 }
               >
                 <div
-                  className="nav-entry-image"
-                  style={{ backgroundImage: `url('${pokemon.imageUrl}')` }}
+                  className='nav-entry-image'
+                  // { backgroundImage: loggedIn ? `url(${bg})` : 'none' }
+                  style={{
+                    backgroundImage: `url('${pokemon.imageUrl}')`,
+                  }}
                 ></div>
                 <div>
-                  <div className="primary-text">{pokemon.name}</div>
-                  <div className="secondary-text">
-                    {pokemon.number} {pokemon.captured && "(Captured)"}
+                  <div className='primary-text'>{pokemon.name}</div>
+                  <div className='secondary-text'>
+                    {pokemon.number}{' '}
+                    {pokemon.captured && '(Captured)'}
                   </div>
                 </div>
               </div>
@@ -55,8 +61,8 @@ const PokemonBrowser = () => {
       {showForm ? (
         <CreatePokemonForm hideForm={() => setShowForm(false)} />
       ) : (
-        <Route path="/pokemon/:pokemonId">
-          <PokemonDetail/>
+        <Route path='/pokemon/:pokemonId'>
+          <PokemonDetail />
         </Route>
       )}
     </main>

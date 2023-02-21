@@ -24,12 +24,14 @@ class Api::PokemonController < ApplicationController
   end
 
   def index
-    @pokemons = Pokemon.all
+    @pokemon = Pokemon.all
+    render :index
     # render json: {'string': 'other'}
   end
 
   def show
     @pokemon = Pokemon.find_by(id: params[:id])
+    render :show
   end
 
   def create
